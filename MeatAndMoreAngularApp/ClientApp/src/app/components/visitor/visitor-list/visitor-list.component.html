@@ -1,0 +1,22 @@
+<h1>{{'visitors.title'|translate}}</h1>
+
+<table class="table table-sm table-hover" *ngIf="visitors?.length>0">
+  <thead>
+    <tr>
+      <th>{{'form.firstName'|translate}}</th>
+      <th>{{'form.lastName'|translate}}</th>
+      <th>{{'form.company'|translate}}</th>
+      <th>{{'form.numberPlate'|translate}}</th>
+      <th>{{'form.visitType'|translate}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let visitor of visitors">
+      <td>{{ visitor.FirstName }}</td>
+      <td>{{ visitor.LastName }}</td>
+      <td>{{ visitor.Company }}</td>
+      <td>{{ visitor.NumberPlate }}</td>
+      <td>{{ visitor.VisitType | visittype | translate}}</td>
+    </tr>
+  </tbody>
+</table>

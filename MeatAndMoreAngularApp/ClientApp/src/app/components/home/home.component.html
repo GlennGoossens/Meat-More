@@ -1,0 +1,17 @@
+<h1 class="text-center">{{'home.welcome' | translate}}</h1>
+<div class="container">
+  <div class="row buffer align-items-center text-center">
+    <div class="col-sm">
+      <button type="button" class="btn btn-outline-primary btn-lg button-text"
+        [routerLink]="['/newvisitor']">{{'home.firstTime' | translate}}</button>
+    </div>
+    <div class="col-sm">
+      <button type="button" class="btn btn-outline-success btn-lg button-text"
+        [routerLink]="['/findvisitor']">{{'home.alreadyKnown' | translate}}</button>
+    </div>
+    <div class="col-sm">
+      <button type="button" class="btn btn-outline-danger btn-lg button-text"
+        [routerLink]="['/endvisit']">{{'home.off'|translate}}</button>
+    </div>
+  </div>
+</div>

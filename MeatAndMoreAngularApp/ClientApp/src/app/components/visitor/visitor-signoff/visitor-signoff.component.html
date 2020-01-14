@@ -1,0 +1,21 @@
+<form [formGroup]="visitorForm" (ngSubmit)="signOff()" novalidate>
+  <div class="form-group row">
+    <label class="control-label col-md-12">{{'form.firstName'|translate}}</label>
+    <div class="col-md-12">
+      <input formControlName="firstname" type="text" class="form-control" placeholder="{{'form.firstName'|translate}}"
+        required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="control-label col-md-12">{{'form.lastName'|translate}}</label>
+    <div class="col-md-12">
+      <input formControlName="lastname" type="text" class="form-control" placeholder="{{'form.lastName'|translate}}"
+        required>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-danger float-right">{{'form.signOff'|translate}}</button>
+  <button type="reset" class="btn btn-secondaty float-left" (click)="revert()">
+    {{'form.clear'|translate}}
+  </button>
+  <button class="btn btn-primary" (click)="cancel()">{{'form.cancel'|translate}}</button>
+</form>

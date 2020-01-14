@@ -1,0 +1,47 @@
+<form [formGroup]="visitorForm" (ngSubmit)="save()" novalidate>
+  <div class="form-group row">
+    <label class="control-label col-md-12">{{'form.firstName'|translate}}</label>
+    <div class="col-md-12">
+      <input formControlName="firstname" type="text" class="form-control" placeholder="{{'form.firstName'|translate}}"
+        required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="control-label col-md-12">{{'form.lastName'|translate}}</label>
+    <div class="col-md-12">
+      <input formControlName="lastname" type="text" class="form-control" placeholder="{{'form.lastName'|translate}}"
+        required>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="control-label col-md-12">{{'form.visitType'|translate}}</label>
+    <div class="col-md-12">
+      <!--<input formControlName="visittype" type="date" class="form-control" placeholder="Visit type" required>-->
+      <select class="visit-select" formControlName="visittype">
+        <option value="" disabled>{{'form.visitTypes.choose'|translate}}</option>
+        <option value="0">{{'form.visitTypes.supplier'|translate}}</option>
+        <option value="1">{{'form.visitTypes.candidate'|translate}}</option>
+        <option value="2">{{'form.visitTypes.visit'|translate}}</option>
+      </select>
+
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="control-label col-md-12">{{'form.company'|translate}}</label>
+    <div class="col-md-12">
+      <input formControlName="company" type="text" class="form-control" placeholder="{{'form.company'|translate}}">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="control-label col-md-12">{{'form.numberPlate'|translate}}</label>
+    <div class="col-md-12">
+      <input formControlName="numberplate" type="text" class="form-control"
+        placeholder="{{'form.numberPlate'|translate}}">
+    </div>
+  </div>
+  <button type="submit" class="btn btn-success float-right">{{'form.save'|translate}}</button>
+  <button type="reset" class="btn btn-secondaty float-left" (click)="revert()">
+    {{'form.clear'|translate}}
+  </button>
+  <button class="btn btn-primary" (click)="cancel()">{{'form.cancel'|translate}}</button>
+</form>

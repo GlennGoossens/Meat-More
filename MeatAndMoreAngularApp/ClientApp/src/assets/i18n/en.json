@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "statistics": "Statistics",
+    "admin": "Login"
+  },
+  "admin": {
+    "email": "Emailaddress",
+    "password": "Password"
+  },
+  "home": {
+    "welcome": "Welcome at Meat & More",
+    "firstTime": "First time here",
+    "alreadyKnown": "Already been here",
+    "off": "I'm off"
+  },
+  "statistics": {
+    "title": "Here are some stats"
+  },
+  "visit": {
+    "title": "Visits",
+    "times": "Visite times"
+  },
+  "visitors": {
+    "title": "Visitors"
+  },
+  "form": {
+    "firstName": "First name",
+    "lastName": "Last name",
+    "startDate": "Arrival time",
+    "endDate": "Departure time",
+    "clear": "Clear",
+    "cancel": "Cancel",
+    "signIn": "Sign In",
+    "company": "Company",
+    "numberPlate": "Car plate",
+    "visitType": "Visit type",
+    "visitTypes": {
+      "choose": "Choose your visit type",
+      "supplier": "Supplier",
+      "candidate": "Job Candidate",
+      "visit": "Visit"
+    },
+    "save": "Save",
+    "signOff": "Sign Off"
+  }
+}

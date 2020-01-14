@@ -1,0 +1,20 @@
+<h1>{{'visit.title'|translate}}</h1>
+
+<table class="table table-sm table-hover" *ngIf="visits?.length>0">
+  <thead>
+    <tr>
+      <th>{{'form.firstName'|translate}}</th>
+      <th>{{'form.lastName'|translate}}</th>
+      <th>{{'form.startDate'|translate}}</th>
+      <th>{{'form.endDate'|translate}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let visit of visits">
+      <td>{{ visit.FirstName }}</td>
+      <td>{{ visit.LastName }}</td>
+      <td>{{ visit.StartDate | date:'medium'}}</td>
+      <td>{{ visit.EndDate | date:'medium' | olddatefilter}}</td>
+    </tr>
+  </tbody>
+</table>

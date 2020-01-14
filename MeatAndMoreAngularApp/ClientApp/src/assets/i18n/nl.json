@@ -1,0 +1,46 @@
+{
+  "nav": {
+    "statistics": "Statistieken",
+    "admin": "Aanmelden"
+  },
+  "admin": {
+    "email": "Email adres",
+    "password": "Wachtwoord"
+  },
+  "home": {
+    "welcome": "Welkom bij Meat & More",
+    "firstTime": "Eerste keer hier",
+    "alreadyKnown": "Ik ben hier al geweest",
+    "off": "Ik vertrek"
+  },
+  "statistics": {
+    "title": "Hier kan je de statistieken bekijken"
+  },
+  "visit": {
+    "title": "Bezoekingen",
+    "times": "Visite tijden"
+  },
+  "visitors": {
+    "title": "Bezoekers"
+  },
+  "form": {
+    "firstName": "Voornaam",
+    "lastName": "Achternaam",
+    "startDate": "Aankomst tijd",
+    "endDate": "Vertrek tijd",
+    "clear": "Leeg maken",
+    "cancel": "Terug",
+    "signIn": "Aanmelden",
+    "company": "Bedrijf",
+    "numberPlate": "Nummerplaat",
+    "visitType": "Bezoeksreden",
+    "visitTypes": {
+      "choose": "Kies je bezoeksreden",
+      "supplier": "Leverancier",
+      "candidate": "Sollicitant",
+      "visit": "Bezoek"
+    },
+    "save": "Opslaan",
+    "signOff": "Afmelden"
+  }
+}
